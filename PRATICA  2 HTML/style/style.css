@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    height: 100vh;
+
+    background: linear-gradient(to bottom, #d38b06 , #000, #000);
+
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    margin: 0;
+
+    color: white;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+.cabecalho-menu-links {
+    font-family: 'Montserrat ', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: #d38b06;
+    ;
+}
+
+.conteudo {
+    height: auto;
+
+    flex-direction: column;
+
+    margin: 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+    
+    width: 615px;
+
+    display: flex;
+    flex-direction: column;
+
+    
+    justify-content: center;
+
+
+    align-items: center;
+
+    
+    text-align: center;
+
+
+    height: auto;
+
+    gap: 40px;
+
+    order: 2;
+}
+
+
+.apresentacao-conteudo-titulo {
+    
+    font-size: 36px;
+
+
+    font-family: 'Krona One', sans-serif;
+
+    
+    text-align: justify;
+}
+
+.apresentacao-conteudo-texto {
+
+    font-size: 24px;
+
+
+    font-family: 'Montserrat', sans-serif;
+
+    
+    text-align: justify;
+}
+
+ 
+
+.apresentacao-conteudo-paragrafo {
+    
+    font-size: 24px;
+
+
+    font-family: 'Montserrat', sans-serif;
+
+    
+    text-align: justify;
+}
+
+
+
+.apresentacao-links {
+
+    width: 500px;
+
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+    gap: 20px;
+}
+
+.apresentacao-links-conteudo{ 
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+}
+
+
+
+.imagem {
+        max-width: 70%;
+        width: auto;
+        gap: 20px;
+        transition:(1.1);
+        
+}
+
+.image-with-border {
+        border: 2px solid #000; 
+        padding: 10px;
+    transition: (1.1); 
+    transform: scale(1.1);
+ }
+        
+
+         .center-content {
+
+            max-width: 35%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 500px; 
+            border-radius: 80px;}
+
+            .center-content:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
+                
+                
+            }
+                
+           .center-text {
+                        text-align: center;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        
+      }
+
+                      
+.botao1 i {
+
+        position: absolute;
+    
+
+        left: 50%;
+    
+
+        top: 50%;
+    
+
+        transform: translate(-50%, -50%);
+    
+        font-size: 60px;
+    }
+    
+    
+    
+ .botao2 {
+        background-color: #000;
+        color: #0077B5; /* Cor padrão do LinkedIn */
+        width: 500px;
+        height: 80px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid #0077B5;
+        border-radius: 50px;
+        font-size: 36px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #0077B5);
+        transition: 0.5s;
+    }
+    
+    .botao2:hover::before {
+        left: 100%;
+    }
+    
+    .botao2 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* fim da estilização ancora2(botao2) */
+    
+    /* inicio estilizaçãp ancora3(botao3) */
+    
+    .botao3 {
+        background-color: #000;
+        align-items: center;
+        color: #333; /* Cor padrão do GitHub */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #333);
+        transition: 0.5s;
+    }
+    
+    .botao3:hover::before {
+        left: 100%;
+    }
+    
+    .botao3 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* fim da estilização ancora3(botao3) */
+    
+    /* inicio estilização ancora4(botao4) */
+    
+    .botao4 {
+        background-color: #000000;
+        align-items: center;
+        color:#d3c125; /* Cor padrão do WhatsApp */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid#1a1b1b;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao4::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #d3a425);
+        transition: 0.5s;
+    }
+    
+    .botao4:hover::before {
+        left: 100%;
+    }
+    
+    .botao4 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* fim estilização ancora4(botao4) */
+    
+    /* inicio estilização ancora5(botao5) */
+    
+    .botao5 {
+        background-color: #000;
+        align-items: center;
+        color: #b61ca9; /* Cor padrão do Instagram */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid#b61ca9;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao5::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #2a0887);
+        transition: 0.5s;
+    }
+    
+    .botao5:hover::before {
+        left: 100%;
+    }
+    
+    .botao5 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .rodape{
+        color: white;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Krona One', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 20px;
+
+    }
+    .rodape a:hover {
+        color: #ffa500;
+    }
